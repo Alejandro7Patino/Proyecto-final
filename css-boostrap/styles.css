@@ -1,0 +1,301 @@
+/* RESET GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F8F5F0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* --------------------- HEADER --------------------- */
+.eco-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 3rem;
+  box-shadow: 0 0 15px #E1EEBC;
+  background-color: #8B6F4E;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 20px;
+  color: #F8F5F0;
+}
+
+.logo svg {
+  width: 50px;
+}
+
+.nav-web ul {
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  margin-left: 7rem;
+}
+
+.nav-web a {
+  text-decoration: none;
+  color: #F8F5F0;
+}
+
+.nav-icon {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+}
+
+.nav-icon ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.login {
+  display: flex;
+  gap: 2rem;
+  padding-top: 5px;
+}
+
+.login a {
+  text-decoration: none;
+  color: #F8F5F0;
+}
+
+/* --------------------- PASOS --------------------- */
+
+.pasos-guia {
+  max-width: 900px;
+  margin: 2rem auto 4rem;
+  padding: 0 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+
+.pasos-guia ol {
+  padding-left: 1.5rem;
+  list-style: decimal;
+}
+
+.pasos-guia li {
+  margin-bottom: 1rem;
+}
+
+.pasos-guia ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.pasos-guia ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------- FOOTER --------------------- */
+
+.eco-footer{
+    display: flex;
+    position: relative;
+    background-color: #8B6F4E;
+    min-height: 220px;
+    overflow: hidden;
+}
+
+.site-info{
+    display: flex;
+}
+
+.copy{
+    list-style: none;
+    flex-wrap: wrap;
+    width: 550px;
+    position: absolute;
+    top: 15%;
+    left:25px
+}
+
+.footer-contact{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 200px;
+    top: 10px;
+    list-style: none;
+}
+
+.footer-contact h4{
+    font-size: 20px;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .footer-contact li a {
+    display: flex;
+    color: inherit;
+    align-items: center;
+    text-decoration: none;
+    gap: 5px;
+  }
+
+/* ----------- */
+.menu-guide {
+  height: 100px;
+  position: relative;
+  left: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.menu-guide a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.menu-guide h1 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+/* ------------ */
+
+/* Media querys */
+
+/* Para pantallas medianas */
+@media (max-width: 900px) {
+  .pasos-guia {
+    max-width: 100%;
+    padding: 0 1rem;
+    font-size: 1rem;
+  }
+
+  .pasos-guia ol {
+    padding-left: 1rem;
+  }
+
+  .pasos-guia ul {
+    margin-left: 1rem;
+  }
+}
+
+/* Para celulares */
+@media (max-width: 600px) {
+  .pasos-guia {
+    padding: 0 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .pasos-guia ol {
+    padding-left: 1rem;
+  }
+
+  .pasos-guia li {
+    margin-bottom: 0.75rem;
+  }
+
+  .pasos-guia ul {
+    margin-left: 1rem;
+    margin-top: 0.25rem;
+  }
+
+  .pasos-guia ul li {
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Para pantallas medianas */
+@media (max-width: 900px) {
+  .eco-container {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem 2rem;
+    gap: 1rem;
+  }
+
+  .nav-web ul {
+    margin-left: 0;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .eco-footer {
+    flex-direction: column;
+    min-height: auto;
+    padding: 1rem;
+  }
+
+  .copy {
+    position: static;
+    width: 100%;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .footer-contact {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+}
+
+/* Para celulares */
+@media (max-width: 600px) {
+  .eco-container {
+    padding: 1rem;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .logo svg {
+    width: 40px;
+  }
+
+  .nav-web ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 0;
+  }
+
+  .nav-icon {
+    gap: 0.5rem;
+  }
+
+  .login {
+    gap: 1rem;
+  }
+
+  .eco-footer {
+    padding: 1rem 0.5rem;
+  }
+
+  .footer-contact {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer-contact h4 {
+    font-size: 18px;
+  }
+}

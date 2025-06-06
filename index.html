@@ -7,6 +7,8 @@
     <meta name="keywords" content="velas artesanales, eco córdoba, productos naturales, decoración sustentable, difusores, velas de soja">
     <meta name="author" content="Eco Córdoba">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>Eco Cordoba</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -128,7 +130,7 @@
          <div class="father-line">
            <div class="line"></div>
           </div>
-        <section class="features">
+        <section data-aos="zoom-in" class="features">
           <div class="features-list">
               <ul>
                   <li class="features-item">
@@ -199,5 +201,13 @@
         </section>
       </footer>
       
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true, 
+  });
+</script>
   </body>
 </html>
